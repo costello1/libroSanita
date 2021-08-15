@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: linear-gradient(red, yellow, green);
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    z-index: 10;
+}
+
+header .logo {
+    position: relative;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header .navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+header .navigation li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+header .navigation li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+header .navigation li a:hover {
+    color: #ffeb3b;
+}
+
+
+/*Capitoliiiii headerrrrrrr*/
+
+.dropbtn {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    color: black;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: -50px;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content p:hover {
+    cursor: pointer;
+    background-color: #2196f3;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    cursor: pointer;
+}
+
+#test{
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+
+/******************/
+.banner {
+    padding: 200px 100px 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner .content {
+    max-width: 700px;
+}
+
+.banner .content h2 {
+    font-size: 3em;
+    color: #fff;
+}
+
+.banner .content p {
+    font-size: 0.9em;
+    color: rgb(248, 248, 248);
+    text-align: justify;
+}
+
+.banner .content a {
+    display: inline-block;
+    background: #fff;
+    color: #434978;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.banner .image {
+    margin-left: 0;
+    margin-left: 64px;
+    max-width: 600px;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    filter: blur(4px);
+    background: #d1ebff;
+    border-radius: 10px;
+}
+
+.swiper-slide-active {
+    filter: blur(0);
+    background: #fff;
+}
+
+.testimonialBox {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    padding-top: 55px;
+    color: #999;
+}
+
+.testimonialBox .quote {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    opacity: 0.2;
+    height: 50px;
+}
+
+.testimonialBox .details {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.testimonialBox .details .imgBx {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.testimonialBox .details .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: rotate(20deg);
+}
+
+.testimonialBox .details h3 {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #2196f3;
+    line-height: 1.1em;
+}
+
+.testimonialBox .details h3 span {
+    font-size: 12px;
+    color: #666;
+}
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
+    background-image: none;
+}
+
+.btn_download {
+    font-size: 13px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 7px;
+    right: 10px;
+}
+
+
+/** Card Contenuto **/
+
+.testimonialContent p {
+    font-size: 14px;
+}
+
+.indice__p{
+    font-size: 30px !important;
+    padding-top: 215px;
+    padding-bottom: 215px;
+    padding-right: 12px;
+    padding-left: 100px;
+}
+
+.presemma__p{
+    font-size: 25px !important;
+    padding-top: 165px;
+    padding-bottom: 165px;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.capitolo__1_p {
+    font-size: 13px !important;
+}
+
+.capitolo__2_p {
+    font-size: 15px !important;
+}
+
+.capitolo__3_p {
+    font-size: 15px !important;
+    padding-bottom: 22px;
+}
+
+.capitolo__4_p {
+    padding-bottom: 16px;
+}
+
+.capitolo__4-2002_p {
+    font-size: 15.9px !important;
+    padding-bottom: 3px;
+}
+
+.capitolo__4-2003_p {
+    font-size: 14px !important;
+}
+
+.capitolo__4-2004_p {
+    font-size: 14px !important;
+}
+
+.capitolo__4-2005_p {
+    font-size: 17px !important;
+}
+
+.capitolo__5_p {
+    margin-bottom: 25px;
+}
+
+.capitolo__5-2006_p {
+    font-size: 13px !important;
+    padding-bottom: 15px;
+}
+
+.capitolo__5-2007_p {
+    font-size: 13.6px !important;
+    padding-bottom: 15px;
+}
+
+.capitolo__5-2007-seconda_p {
+    font-size: 19.8px !important;
+}
+
+.capitolo__5-2008_p {
+    font-size: 25px !important;
+    padding-top: 145px;
+    padding-bottom: 145px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.capitolo__5-2009_p {
+    font-size: 25px !important;
+    padding-top: 110px;
+    padding-bottom: 105px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.capitolo__5-2010_p {
+    font-size: 22px !important;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.capitolo__6-2011_p {
+    font-size: 13.7px !important;
+    margin: 1px;
+}
+
+.capitolo__7-2012_p {
+    font-size: 12.8px !important;
+    margin: 1px;
+}
+
+.capitolo__7-2013_p {
+    font-size: 23px !important;
+    padding-bottom: 115px;
+    padding-top: 115px;
+    padding-left: 17px;
+}
+
+.capitolo__8_p {
+    font-size: 20px !important;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.capitolo__conclusioni_p {
+    font-size: 14.7px !important;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.patrocinio{
+    color: #696969;
+    font-style: italic;
+}
+
+.contatti_ordine{
+    color: #a7a7a7;
+    font-style: oblique;
+}
